@@ -16,6 +16,8 @@
     --font-action: "Mulish", sans-serif;
 }
 
+/*hamburguer*/
+
 .hamburguer {
     width: 2rem;
     height: 2rem;
@@ -84,7 +86,7 @@
     opacity: 1;
 }
 
-
+/*header*/
 
 header {
     width: 100%;
@@ -182,6 +184,8 @@ header {
     background: linear-gradient(to left, #3A6073, #16222A);
 }
 
+/*sidebar*/
+
 .sidebar {
     width: 20rem;
     height: 100vh;
@@ -246,9 +250,12 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/*conhecimentos*/
+
 .sessao-conhecimentos {
     background-color: whitesmoke;
     height: 100vh;
+    border-bottom: 1px dashed rgb(212, 212, 212);
 }
 
 .conhecimentos {
@@ -333,6 +340,8 @@ header {
     width: 100%;
 }
 
+/*projetos*/
+
 .sessao-projetos {
     width: 100%;
     height: 100vh;
@@ -347,8 +356,8 @@ header {
 }
 
 .card{
-    width: 18rem;
-    height: 25rem;
+    width: 20rem;
+    height: 28rem;
     position: relative;
     
 }
@@ -394,7 +403,7 @@ header {
     font-family: var(--font-action);
     font-size: 0.9rem;
     font-weight: bolder;
-    color: #125f88;
+    color: #b6b9bb;
     margin-bottom:1.5rem;
 }
 
@@ -406,9 +415,7 @@ header {
     margin-bottom: 1rem;
 }
 
-.card-info button {
-    width: 8rem;
-    height: 2.5rem;
+.btn {
     background: #16222A;  
     background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
     background: linear-gradient(to right, #3A6073, #16222A);
@@ -421,6 +428,12 @@ header {
     box-shadow:  0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
 }
 
+
+.card-info button {
+    width: 8rem;
+    height: 2.5rem;
+}
+
 .card:hover .card-info {
     bottom: 2.5rem;
     opacity: 1;
@@ -429,4 +442,182 @@ header {
 
 .card-info button:hover {
     cursor: pointer;
+}
+
+/*Contato*/
+
+.sessao-contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-wrapper {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+.contato-left {
+    width: 35%;
+    background: linear-gradient(rgba(15,15,15,0.6), rgba(22,22,22,0.9) ), url(imgs/contato.jpg);
+    background-size: cover;
+}
+
+.contato-right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+    text-align: center;
+    font-family: var(--font-primary);color: #272727;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.sessao-contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group {
+    position: relative;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secudary);
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    min-width: 20rem;
+    max-width: 20rem;
+    min-height: 2rem;
+    max-height: 10rem;
+}
+
+.field-label{
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-family: var(--font-secudary);
+    text-transform: uppercase;
+    cursor: text;
+}
+
+.field:valid ~ label, .field:focus ~ label {
+    opacity: 0;
+}
+
+.field:valid, .field:focus {
+    border-bottom: 1.3px solid;
+}
+
+.btn-contato {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    width: 20rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+/*orcamento*/
+
+.sessao-orcamento {
+    width: 100%;
+    height: 100vh;
+    background: url(imgs/bg-orcamento.jpg);
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcamento-wrapper {
+    width: 60%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.sessao-orcamento h1 {
+    position: absolute;
+    top: -2.5rem;
+    font-size: 3rem;
+    left: 2rem;
+    background: #16222A;  
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);  
+    background: linear-gradient(to right, #3A6073, #16222A);
+    padding: 0 3rem;
+    color: whitesmoke;
+    font-family: var(--font-primary);
+    font-weight: lighter;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.sessao-orcamento form {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.sessao-orcamento label {
+    font-family: var(--font-secudary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"] {
+    font-family: var(--font-secudary);
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
+.sessao-orcamento input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.sessao-orcamento input[type="radio"] {
+    width: 1rem;
+    height: 1rem;
+}
+
+.group-layout input {
+    margin-top: .1rem;
+}
+
+.group-layout label {
+    font-size: 1.1rem;
+    padding-left: .6rem;
+}
+
+.btn-orcamento {
+    text-transform: uppercase;
+    padding: 1rem;
+    cursor: pointer;
+    grid-column: 2;
 }
