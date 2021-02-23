@@ -583,6 +583,7 @@ header {
     grid-template-columns: auto 1fr;
     column-gap: 2rem;
     row-gap: 2rem;
+    align-items: center;
 }
 
 .sessao-orcamento label {
@@ -659,9 +660,11 @@ footer  {
     display: flex;
 }
 
+/*botao topo*/
+
 #link-topo {
     position: fixed;
-    right: 3rem;
+    right: 2rem;
     bottom: 2rem;
     width: 2rem;
     height: 2rem;
@@ -676,3 +679,4 @@ footer  {
     border-radius: .5rem;
     box-shadow: 0 0.1rem 0.6rem #00000009;
 }
+
